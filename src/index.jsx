@@ -1,8 +1,9 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { RouterProvider } from "react-router-dom";
-import "@/styles/index.css";
 import router from "@/router.jsx";
+import "@/styles/index.css";
+import "@/services/fontawesome.js"
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
