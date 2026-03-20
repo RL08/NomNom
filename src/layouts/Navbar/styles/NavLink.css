@@ -1,0 +1,16 @@
+.nav-link {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+  padding: 8px 14px;
+  border-radius: var(--border-radius-sm);
+  transition:
+    background 0.15s,
+    color 0.15s;
+}
+.nav-link:hover {
+  background: var(--cream-dark);
+}
+.nav-link.active {
+  color: var(--amber);
+}
