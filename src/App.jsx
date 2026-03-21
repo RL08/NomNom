@@ -1,4 +1,4 @@
-import Navbar from "@/layouts/Navbar/components/Navbar.jsx";
+import Navbar from "@/layouts/navbar/components/Navbar.jsx";
 import { Outlet } from "react-router-dom";
 
 function App() {
