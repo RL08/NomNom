@@ -1,8 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
-import NavLink from "@/layouts/Navbar/components/NavLink.jsx";
-import "@/layouts/Navbar/styles/Navbar.css";
+import NavLink from "@/layouts/navbar/components/NavLink.jsx";
+import "@/layouts/navbar/styles/Navbar.css";
 
 function Navbar() {
   const [searchInput, setSearchInput] = useState("");

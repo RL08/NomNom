@@ -1,10 +1,10 @@
 import { createBrowserRouter } from 'react-router-dom'
 import App from '@/App.jsx';
-import HomePage from '@/pages/HomePage.jsx';
-import CategoryPage from '@/pages/CategoryPage.jsx';
-import MealPage from '@/pages/MealPage.jsx';
-import FavoritePage from '@/pages/FavoritePage.jsx';
-import SearchResultPage from '@/pages/SearchResultPage.jsx';
+import HomePage from '@/pages/home/HomePage.jsx';
+import CategoryPage from '@/pages/category/CategoryPage.jsx';
+import MealPage from '@/pages/meal/MealPage.jsx';
+import FavoritePage from '@/pages/favorite/FavoritePage.jsx';
+import SearchResultPage from '@/pages/search/SearchResultPage.jsx';
 
 const router = createBrowserRouter([
   {

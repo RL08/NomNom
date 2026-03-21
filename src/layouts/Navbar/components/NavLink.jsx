@@ -1,5 +1,5 @@
 import { NavLink as DefaultNavLink } from "react-router-dom";
-import "@/layouts/Navbar/styles/NavLink.css"
+import "@/layouts/navbar/styles/NavLink.css"
 
 function NavLink({ to, children }) {
   return (
