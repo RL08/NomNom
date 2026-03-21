@@ -5,8 +5,8 @@ import "@/pages/home/HomePage.css";
 
 function HomePage() {
   const [categories, setCategories] = useState([]);
-  const [categoryLoading, setCategoryLoading] = useState(true);
-  const [categoryError, setCategoryError] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const loadCategories = async () => {
@@ -14,9 +14,9 @@ function HomePage() {
         const categories = await getCategories();
         setCategories(categories);
       } catch {
-        setCategoryError("Failed to load categories...");
+        setError("Failed to load categories...");
       } finally {
-        setCategoryLoading(false);
+        setLoading(false);
       }
     };
 
@@ -26,8 +26,8 @@ function HomePage() {
   return (
     <section className="categories-section">
       <h2>Categories</h2>
-      {categoryError && <div className="error-message">{categoryError}</div>}
-      {categoryLoading ? (
+      {error && <div className="error-message">{error}</div>}
+      {loading ? (
         <div>Loading...</div>
       ) : (
         <div className="categories-grid">
