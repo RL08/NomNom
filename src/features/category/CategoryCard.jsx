@@ -4,17 +4,17 @@ import "@features/category/CategoryCard.css";
 function CategoryCard({ category }) {
   return (
     <Link to={`/category/${category.strCategory}`}>
-      <div className="card">
-        <div className="card-img-container">
+      <div className="categorycard-card">
+        <div className="categorycard-card-img-container">
           <img
             src={category.strCategoryThumb}
             alt={category.strCategory}
-            className="card-img"
+            className="categorycard-card-img"
           />
-          <div className="card-overlay" />
+          <div className="categorycard-card-overlay" />
         </div>
-        <div className="card-body">
-          <h3 className="card-title">{category.strCategory}</h3>
+        <div className="categorycard-card-body">
+          <h3 className="categorycard-card-title">{category.strCategory}</h3>
         </div>
       </div>
     </Link>

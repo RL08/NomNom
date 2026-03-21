@@ -1,4 +1,4 @@
-.card {
+.categorycard-card {
   border-radius: var(--border-radius-md);
   overflow: hidden;
   background: var(--white);
@@ -9,21 +9,21 @@
     transform 0.25s,
     box-shadow 0.25s;
 }
-.card:hover {
+.categorycard-card:hover {
   transform: translateY(-5px) scale(1.05);
   box-shadow: var(--box-shadow-md);
 }
-.card-img-container {
+.categorycard-card-img-container {
   position: relative;
   height: 160px;
   overflow: hidden;
 }
-.card-img {
+.categorycard-card-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.card-overlay {
+.categorycard-card-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(
@@ -32,13 +32,13 @@
     transparent 60%
   );
 }
-.card-body {
+.categorycard-card-body {
   padding: 14px 16px;
   display: flex;
   flex-direction: column;
   flex: 1;
 }
-.card-title {
+.categorycard-card-title {
   font-family: var(--font-family-fancy);
   font-size: 1.05rem;
   font-weight: 1000;
