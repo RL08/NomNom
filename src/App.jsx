@@ -5,9 +5,11 @@ function App() {
   return (
     <>
       <Navbar />
-      <Outlet />
+      <div className="outlet">
+        <Outlet />
+      </div>
     </>
   );
 }
 
-export default App
+export default App;
