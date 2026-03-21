@@ -5,3 +5,9 @@ export const getCategories = async () => {
   const data = await response.json();
   return data.categories;
 };
+
+export const getRandomMeal = async () => {
+  const response = await fetch(`${BASE_URL}/random.php`);
+  const data = await response.json();
+  return data.meals[0];
+}
