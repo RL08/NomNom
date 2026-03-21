@@ -18,18 +18,19 @@ function Navbar() {
   };
 
   return (
-    <nav>
-      <div className="full-bleed-container">
-        <Link to="/" className="logo-container">
-          <span className="logo">Nom</span>
-          <span className="logo">Nom</span>
+    <nav className="navbar">
+      <div className="navbar-full-bleed-container">
+        <Link to="/" className="navbar-logo-container">
+          <span className="navbar-logo">Nom</span>
+          <span className="navbar-logo">Nom</span>
         </Link>
-        <form onSubmit={handleSearch}>
-          <div className="search-container">
-            <button type="submit">
-              <FontAwesomeIcon icon="magnifying-glass" className="icon" />
+        <form className="navbar-form" onSubmit={handleSearch}>
+          <div className="navbar-search-container">
+            <button className="navbar-button" type="submit">
+              <FontAwesomeIcon icon="magnifying-glass" className="navbar-icon" />
             </button>
             <input
+            className="navbar-input"
               type="text"
               placeholder="Search any meal..."
               value={searchInput}
@@ -37,7 +38,7 @@ function Navbar() {
             />
           </div>
         </form>
-        <div className="links">
+        <div className="navbar-links">
           <NavLink to="/">Browse</NavLink>
           <NavLink to="/favorite">Favorite</NavLink>
         </div>

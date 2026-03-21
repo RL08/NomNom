@@ -1,4 +1,4 @@
-nav {
+.navbar {
   position: sticky;
   top: 0;
   z-index: 100;
@@ -6,7 +6,7 @@ nav {
   border-bottom: 1px solid var(--border);
   height: 68px;
 }
-.full-bleed-container {
+.navbar-full-bleed-container {
   max-width: var(--max-width);
   margin: 0 auto;
   height: 100%;
@@ -15,7 +15,7 @@ nav {
   gap: 20px;
   padding: 0 24px;
 }
-.logo-container {
+.navbar-logo-container {
   font-family: var(--font-family-fancy);
   font-size: 1.5rem;
   font-weight: 700;
@@ -23,18 +23,18 @@ nav {
   white-space: nowrap;
   flex-shrink: 0;
 }
-.logo:first-child {
+.navbar-logo:first-child {
   color: var(--ink);
 }
-.logo:last-child {
+.navbar-logo:last-child {
   color: var(--amber);
 }
-form {
+.navbar-form {
   flex: 1;
   max-width: 440px;
   margin: 0 auto;
 }
-.search-container {
+.navbar-search-container {
   display: flex;
   align-items: center;
   background: var(--cream-dark);
@@ -46,24 +46,24 @@ form {
     border-color 0.2s,
     box-shadow 0.2s;
 }
-.search-container:focus-within {
+.navbar-search-container:focus-within {
   border-color: var(--amber);
   box-shadow: 0 0 0 3px rgba(201, 98, 31, 0.12);
 }
-button {
+.navbar-button {
   background: none;
   border: none;
   cursor: pointer;
   color: var(--ink-faint);
   padding: 0;
 }
-.icon {
+.navbar-icon {
   width: 16px;
   height: 16px;
   color: var(--ink-faint);
   flex-shrink: 0;
 }
-input {
+.navbar-input {
   flex: 1;
   background: none;
   border: none;
@@ -73,10 +73,10 @@ input {
   color: var(--ink);
   padding: 10px 0;
 }
-input::placeholder {
+.navbar-input::placeholder {
   color: var(--ink-faint);
 }
-.links {
+.navbar-links {
   display: flex;
   align-items: center;
   gap: 4px;
