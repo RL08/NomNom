@@ -1,4 +1,4 @@
-.nav-link {
+.navlink-link {
   font-size: 0.875rem;
   font-weight: 500;
   color: var(--ink-soft);
@@ -8,9 +8,9 @@
     background 0.15s,
     color 0.15s;
 }
-.nav-link:hover {
+.navlink-link:hover {
   background: var(--cream-dark);
 }
-.nav-link.active {
+.navlink-link.active {
   color: var(--amber);
 }

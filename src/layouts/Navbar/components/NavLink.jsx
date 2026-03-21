@@ -5,7 +5,7 @@ function NavLink({ to, children }) {
   return (
     <DefaultNavLink
       to={to}
-      className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
+      className={({ isActive }) => `navlink-link ${isActive ? "active" : ""}`}
     >
       {children}
     </DefaultNavLink>
