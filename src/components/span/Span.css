@@ -1,0 +1,24 @@
+.span {
+  font-weight: 700;
+}
+.span-logo:first-child {
+  color: var(--ink);
+}
+.span-logo:last-child {
+  color: var(--amber);
+}
+.span-dark {
+  background: rgba(255, 255, 255, 0.18);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.span-tag {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: var(--border-radius-lg);
+  backdrop-filter: blur(4px);
+}
+.span-insidebig {
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+}
