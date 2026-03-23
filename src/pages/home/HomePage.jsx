@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { getCategories } from "@/services/mealService.js";
 import "@/pages/home/HomePage.css";
+import Section from "@/components/section/Section.jsx";
 import CategoryCard from "@/features/category/CategoryCard.jsx";
 import RandomMealCard from "@/features/meal/components/RandomMealCard.jsx";
 
@@ -19,19 +20,21 @@ function HomePage() {
       setLoading(false);
     }
   }, []);
-  
+
   useEffect(() => {
     loadCategories();
   }, [loadCategories]);
 
   return (
     <>
-      <section className="todays-pick-section">
+      <Section>
         <RandomMealCard></RandomMealCard>
-      </section>
-      <section className="categories-section">
-        <h2>Categories</h2>
-        {error && <div className="error-message">{error}</div>}
+      </Section>
+      <Section>
+        <h1>Categories</h1>
+
+        {error && <div className="error-message">{error}</div>}  
+        
         {loading ? (
           <div>Loading...</div>
         ) : (
@@ -44,7 +47,7 @@ function HomePage() {
             ))}
           </div>
         )}
-      </section>
+      </Section>
     </>
   );
 }
