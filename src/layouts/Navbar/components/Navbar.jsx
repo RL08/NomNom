@@ -1,8 +1,12 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
-import NavLink from "@/layouts/navbar/components/NavLink.jsx";
 import "@/layouts/navbar/styles/Navbar.css";
+import NavLink from "@/layouts/navbar/components/NavLink.jsx";
+import Button from "@/components/button/Button.jsx";
+import Input from "@/components/input/Input.jsx";
+import Form from "@/components/form/Form.jsx";
+import Span from "@/components/span/Span.jsx";
 
 function Navbar() {
   const [searchInput, setSearchInput] = useState("");
@@ -21,24 +25,26 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-full-bleed-container">
         <Link to="/" className="navbar-logo-container">
-          <span className="navbar-logo">Nom</span>
-          <span className="navbar-logo">Nom</span>
+          <Span variant="logo">Nom</Span>
+          <Span variant="logo">Nom</Span>
         </Link>
-        <form className="navbar-form" onSubmit={handleSearch}>
+        <Form variant="navbar" onSubmit={handleSearch}>
           <div className="navbar-search-container">
-            <button className="navbar-button" type="submit">
-              <FontAwesomeIcon icon="magnifying-glass" className="navbar-icon" />
-            </button>
-            <input
-            className="navbar-input"
+            <Button variant="nostyle" type="submit">
+              <FontAwesomeIcon
+                icon="magnifying-glass"
+                className="navbar-icon"
+              />
+            </Button>
+            <Input
               type="text"
               placeholder="Search any meal..."
               value={searchInput}
               onChange={(e) => setSearchInput(e.target.value)}
             />
           </div>
-        </form>
-        <div className="navbar-links">
+        </Form>
+        <div className="navbar-link-container">
           <NavLink to="/">Browse</NavLink>
           <NavLink to="/favorite">Favorite</NavLink>
         </div>
