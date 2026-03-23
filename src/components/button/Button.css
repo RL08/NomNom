@@ -1,0 +1,30 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 18px;
+  border-radius: var(--border-radius-lg);
+  border: 1.5px solid var(--border);
+  background: none;
+  cursor: pointer;
+  font-family: var(--font-family-default);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+  transition:
+    background 0.2s,
+    transform 0.15s;
+}
+.button:hover {
+  border-color: var(--amber);
+  color: var(--amber);
+  transform: translateY(-1px);
+}
+.button-nostyle {
+  border: 0;
+  background: 0;
+  padding: 0;
+}
+.button-nostyle:hover {
+  transform: translateY(0);
+}
