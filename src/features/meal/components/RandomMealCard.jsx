@@ -3,6 +3,17 @@ import { Link } from "react-router-dom";
 import { getRandomMeal } from "@/services/mealService.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "@features/meal/style/RandomMealCard.css";
+import Button from "@/components/button/Button.jsx";
+import {
+  Card,
+  CardBody,
+  CardDescription,
+  CardImage,
+  CardLink,
+  CardOverlay,
+  CardTitle,
+} from "@/components/card/Card.jsx";
+import Span from "@/components/span/Span.jsx";
 
 function RandomMealCard() {
   const [randomMeal, setRandomMeal] = useState(null);
@@ -26,46 +37,47 @@ function RandomMealCard() {
 
   return (
     <>
-      <div className="randommealcard-card-header">
-        <h2>Today's Pick</h2>
-        <button className="randommealcard-button" onClick={refreshMeal}>
+      <div className="randommealcard-header">
+        <h1>Today's Pick</h1>
+        <Button onClick={refreshMeal}>
           <FontAwesomeIcon icon="repeat" />
           Shuffle
-        </button>
+        </Button>
       </div>
+
       {error && <div className="error-message">{error}</div>}
+
       {loading ? (
         <div>Loading...</div>
       ) : (
-        <div className="randommealcard-card">
+        <Card variant="big">
           <div className="randommealcard-card-img-container">
-            <img
-              src={randomMeal.strMealThumb}
-              alt={randomMeal.strMeal}
-              className="randommealcard-card-img"
-            />
-            <div className="randommealcard-card-overlay" />
+            <CardImage src={randomMeal.strMealThumb} alt={randomMeal.strMeal} />
+            <CardOverlay variant="darker" />
           </div>
-          <div className="randommealcard-card-body">
+          <CardBody variant="insidebig">
             <div className="randommealcard-card-tag-container">
               {randomMeal.strCategory && (
-                <span className="randommealcard-card-tag">{randomMeal.strCategory}</span>
+                <Span variant="dark tag insidebig">{randomMeal.strCategory}</Span>
               )}
               {randomMeal.strArea && (
-                <span className="randommealcard-card-tag">{randomMeal.strArea}</span>
+                <Span variant="dark tag insidebig">{randomMeal.strArea}</Span>
               )}
             </div>
-            <h2 className="randommealcard-card-title">{randomMeal.strMeal}</h2>
-            <p className="randommealcard-card-description">
+            <CardTitle variant="dark insidebig">{randomMeal.strMeal}</CardTitle>
+            <CardDescription variant="dark insidebig">
               {randomMeal.strInstructions?.slice(0, 160)}...
-            </p>
-            <div className="randommealcard-card-link">
-              <Link to={`/meal/${randomMeal.strMeal}`} className="randommealcard-view-button">
+            </CardDescription>
+            <div className="randommealcard-card-link-container">
+              <CardLink
+                variant="dark button amber"
+                to={`/meal/${randomMeal.strMeal}`}
+              >
                 View Recipe →
-              </Link>
+              </CardLink>
             </div>
-          </div>
-        </div>
+          </CardBody>
+        </Card>
       )}
     </>
   );
