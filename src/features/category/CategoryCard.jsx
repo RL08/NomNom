@@ -1,22 +1,28 @@
 import { Link } from "react-router-dom";
 import "@features/category/CategoryCard.css";
+import {
+  Card,
+  CardBody,
+  CardImage,
+  CardOverlay,
+  CardTitle,
+} from "@/components/card/Card.jsx";
 
 function CategoryCard({ category }) {
   return (
     <Link to={`/category/${category.strCategory}`}>
-      <div className="categorycard-card">
+      <Card variant="animated">
         <div className="categorycard-card-img-container">
-          <img
+          <CardImage
             src={category.strCategoryThumb}
             alt={category.strCategory}
-            className="categorycard-card-img"
           />
-          <div className="categorycard-card-overlay" />
+          <CardOverlay />
         </div>
-        <div className="categorycard-card-body">
-          <h3 className="categorycard-card-title">{category.strCategory}</h3>
-        </div>
-      </div>
+        <CardBody>
+          <CardTitle>{category.strCategory}</CardTitle>
+        </CardBody>
+      </Card>
     </Link>
   );
 }
