@@ -1,0 +1,25 @@
+.card {
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  background: white;
+  box-shadow: var(--box-shadow-sm);
+  display: flex;
+  flex-direction: column;
+  transition:
+    transform 0.25s,
+    box-shadow 0.25s;
+}
+.card-big {
+  position: relative;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  height: 480px;
+  margin: 0 17px 40px 17px;
+  box-shadow: var(--box-shadow-lg);
+  transform: scale(1.03);
+}
+.card-animated:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: var(--box-shadow-md);
+  cursor: pointer;
+}

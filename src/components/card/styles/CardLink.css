@@ -1,0 +1,19 @@
+.cardlink {
+  font-weight: 500;
+}
+.cardlink-dark {
+  color: #fff;
+}
+.cardlink-amber {
+  background: var(--amber);
+}
+.cardlink-button {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.875rem;
+  padding: 11px 22px;
+  border-radius: var(--border-radius-lg);
+  transition:
+    background 0.2s,
+    transform 0.15s;
+}
