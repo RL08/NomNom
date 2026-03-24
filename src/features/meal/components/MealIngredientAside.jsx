@@ -24,8 +24,8 @@ function MealIngredientAside({ meal }) {
                   />
                 </div>
                 <div className="ingredient-info">
-                  {ingredient && <Span variant="lg logo">{ingredient}</Span>}
-                  {measure && <Span variant="sm logo">{measure}</Span>}
+                  {ingredient && <Span variant="md logo bold">{ingredient}</Span>}
+                  {measure && <Span variant="sm logo bold">{measure}</Span>}
                 </div>
               </Li>
             ))}

@@ -55,10 +55,10 @@ function RandomMealCard() {
           <CardBody variant="lg">
             <div className="randommealcard-card-tag-container">
               {randomMeal.strCategory && (
-                <Span variant="dark tag lg">{randomMeal.strCategory}</Span>
+                <Span variant="dark tag sm">{randomMeal.strCategory}</Span>
               )}
               {randomMeal.strArea && (
-                <Span variant="dark tag lg">{randomMeal.strArea}</Span>
+                <Span variant="dark tag sm">{randomMeal.strArea}</Span>
               )}
             </div>
             <CardTitle variant="dark lg">{randomMeal.strMeal}</CardTitle>
