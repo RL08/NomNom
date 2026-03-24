@@ -17,3 +17,9 @@ export const getRandomMeal = async () => {
   const data = await response.json();
   return data.meals[0];
 };
+
+export const getMealById = async (id) => {
+  const response = await fetch(`${BASE_URL}/lookup.php?i=${id}`);
+  const data = await response.json();
+  return data.meals[0];
+};
