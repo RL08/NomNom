@@ -23,3 +23,18 @@ export const getMealById = async (id) => {
   const data = await response.json();
   return data.meals[0];
 };
+
+export const getIngredientsFromMeal = (meal) => {
+  const ingredients = [];
+  for (let i = 1; i <= 20; i++) {
+    const ingredient = meal[`strIngredient${i}`];
+    const measure = meal[`strMeasure${i}`];
+    if (ingredient && ingredient.trim()) {
+      ingredients.push({
+        ingredient: ingredient.trim(),
+        measure: measure?.trim() || "",
+      });
+    }
+  }
+  return ingredients;
+};
