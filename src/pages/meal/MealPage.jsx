@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import { getMealById } from "@/services/mealService.js";
 import Section from "@/components/ui/section/Section.jsx";
 import { Card, CardImage, CardOverlay } from "@/components/ui/card/Card.jsx";
+import MealIngredientAside from "@/features/meal/components/MealIngredientAside.jsx";
 
 function MealPage() {
   const { id } = useParams();
@@ -38,6 +39,9 @@ function MealPage() {
           </Card>
         )}
       </Section>
+      <div className="mealpage-meal-info-container">
+        {meal && <MealIngredientAside meal={meal} />}
+      </div>
     </>
   );
 }

@@ -1,0 +1,11 @@
+.mealingredientaside-ingredient-img-container {
+  width: 60px;
+  height: 60px;
+  background: var(--cream-dark);
+  border-radius: var(--radius-sm);
+}
+.ingredient-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
