@@ -44,10 +44,8 @@ function CategoryPage() {
       </Section>
       <Section>
         {error && <div className="error-message">{error}</div>}
-
-        {loading ? (
-          <div>Loading...</div>
-        ) : (
+        {loading && <div>Loading...</div>}
+        {meals && (
           <div className="meals-grid">
             {meals.map((meal) => (
               <MealCard meal={meal} key={meal.idMeal}></MealCard>
