@@ -3,6 +3,11 @@
   font-size: 1.05rem;
   font-weight: 700;
 }
+.cardtitle-wrap {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .cardtitle-dark {
   color: white;
 }
