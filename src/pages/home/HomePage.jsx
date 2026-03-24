@@ -34,11 +34,9 @@ function HomePage() {
       <Section>
         <H1>Categories</H1>
 
-        {error && <div className="error-message">{error}</div>}  
-        
-        {loading ? (
-          <div>Loading...</div>
-        ) : (
+        {error && <div className="error-message">{error}</div>}
+        {loading && <div>Loading...</div>}
+        {categories && (
           <div className="categories-grid">
             {categories.map((category) => (
               <CategoryCard
