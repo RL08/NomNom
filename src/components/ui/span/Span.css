@@ -1,5 +1,5 @@
 .span {
-  font-weight: 700;
+  font-weight: 600;
 }
 .span-logo:first-child {
   color: var(--ink);
@@ -17,6 +17,10 @@
   padding: 4px 12px;
   border-radius: var(--border-radius-lg);
   backdrop-filter: blur(4px);
+}
+.span-sm {
+  font-size: 0.60rem;
+  letter-spacing: 0.04em;
 }
 .span-lg {
   font-size: 0.75rem;
