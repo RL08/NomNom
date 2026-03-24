@@ -1,5 +1,6 @@
 import { cn } from "@/utils/cn.js";
 import "@/components/ui/list/styles/Ul.css";
+import "@/components/ui/list/styles/Ol.css";
 import "@/components/ui/list/styles/Li.css";
 
 function Ul({ variant = "", children, ...props }) {
@@ -7,6 +8,14 @@ function Ul({ variant = "", children, ...props }) {
     <ul className={cn("ul", variant)} {...props}>
       {children}
     </ul>
+  );
+}
+
+function Ol({ variant = "", children, ...props }) {
+  return (
+    <ol className={cn("ol", variant)} {...props}>
+      {children}
+    </ol>
   );
 }
 
@@ -18,4 +27,4 @@ function Li({ variant = "", children, ...props }) {
   );
 }
 
-export { Ul, Li };
+export { Ul, Ol, Li };
