@@ -10,7 +10,7 @@ import {
 
 function MealCard({ meal }) {
   return (
-    <Link to={`/meal/${meal.strMeal}`}>
+    <Link to={`/meal/${meal.idMeal}`}>
       <Card variant="animated">
         <div className="meal-card-img-wrapper">
           <CardImage src={meal.strMealThumb} alt={meal.strMeal} />

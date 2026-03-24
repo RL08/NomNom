@@ -72,7 +72,7 @@ function RandomMealCard() {
             <div className="randommealcard-card-link-container">
               <CardLink
                 variant="dark button amber"
-                to={`/meal/${randomMeal.strMeal}`}
+                to={`/meal/${randomMeal.idMeal}`}
               >
                 View Recipe →
               </CardLink>
