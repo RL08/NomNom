@@ -14,6 +14,7 @@ import {
   CardTitle,
 } from "@/components/ui/card/Card.jsx";
 import Span from "@/components/ui/span/Span.jsx";
+import { H1 } from "@/components/ui/heading/Heading.jsx";
 
 function RandomMealCard() {
   const [randomMeal, setRandomMeal] = useState(null);
@@ -38,7 +39,7 @@ function RandomMealCard() {
   return (
     <>
       <div className="randommealcard-header">
-        <h1>Today's Pick</h1>
+        <H1>Today's Pick</H1>
         <Button onClick={refreshMeal}>
           <FontAwesomeIcon icon="repeat" />
           Shuffle

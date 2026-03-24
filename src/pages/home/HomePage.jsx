@@ -4,6 +4,7 @@ import "@/pages/home/HomePage.css";
 import Section from "@/components/ui/section/Section.jsx";
 import CategoryCard from "@/features/category/CategoryCard.jsx";
 import RandomMealCard from "@/features/meal/components/RandomMealCard.jsx";
+import { H1 } from "@/components/ui/heading/Heading.jsx";
 
 function HomePage() {
   const [categories, setCategories] = useState([]);
@@ -31,7 +32,7 @@ function HomePage() {
         <RandomMealCard></RandomMealCard>
       </Section>
       <Section>
-        <h1>Categories</h1>
+        <H1>Categories</H1>
 
         {error && <div className="error-message">{error}</div>}  
         
