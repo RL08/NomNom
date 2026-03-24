@@ -3,10 +3,10 @@ import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import "@/layouts/navbar/styles/Navbar.css";
 import NavLink from "@/layouts/navbar/components/NavLink.jsx";
-import Button from "@/components/button/Button.jsx";
-import Input from "@/components/input/Input.jsx";
-import Form from "@/components/form/Form.jsx";
-import Span from "@/components/span/Span.jsx";
+import Button from "@/components/ui/button/Button.jsx";
+import Input from "@/components/ui/input/Input.jsx";
+import Form from "@/components/ui/form/Form.jsx";
+import Span from "@/components/ui/span/Span.jsx";
 
 function Navbar() {
   const [searchInput, setSearchInput] = useState("");

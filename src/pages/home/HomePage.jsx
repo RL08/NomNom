@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { getCategories } from "@/services/mealService.js";
 import "@/pages/home/HomePage.css";
-import Section from "@/components/section/Section.jsx";
+import Section from "@/components/ui/section/Section.jsx";
 import CategoryCard from "@/features/category/CategoryCard.jsx";
 import RandomMealCard from "@/features/meal/components/RandomMealCard.jsx";
 

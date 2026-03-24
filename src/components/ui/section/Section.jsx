@@ -1,5 +1,5 @@
 import { cn } from "@/utils/cn.js";
-import "@/components/section/Section.css";
+import "@/components/ui/section/Section.css";
 
 function Section({ variant = "", children, ...props }) {
   return (

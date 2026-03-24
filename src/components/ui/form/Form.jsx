@@ -1,5 +1,5 @@
 import { cn } from "@/utils/cn.js";
-import "@/components/form/Form.css";
+import "@/components/ui/form/Form.css";
 
 function Form({ variant = "", children, ...props }) {
   return (

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { getRandomMeal } from "@/services/mealService.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "@features/meal/style/RandomMealCard.css";
-import Button from "@/components/button/Button.jsx";
+import Button from "@/components/ui/button/Button.jsx";
 import {
   Card,
   CardBody,
@@ -12,8 +12,8 @@ import {
   CardLink,
   CardOverlay,
   CardTitle,
-} from "@/components/card/Card.jsx";
-import Span from "@/components/span/Span.jsx";
+} from "@/components/ui/card/Card.jsx";
+import Span from "@/components/ui/span/Span.jsx";
 
 function RandomMealCard() {
   const [randomMeal, setRandomMeal] = useState(null);

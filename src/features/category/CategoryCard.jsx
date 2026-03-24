@@ -6,7 +6,7 @@ import {
   CardImage,
   CardOverlay,
   CardTitle,
-} from "@/components/card/Card.jsx";
+} from "@/components/ui/card/Card.jsx";
 
 function CategoryCard({ category }) {
   return (

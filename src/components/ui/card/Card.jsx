@@ -1,12 +1,12 @@
 import { cn } from "@/utils/cn.js";
 import { Link } from "react-router-dom";
-import "@/components/card/styles/Card.css";
-import "@/components/card/styles/CardBody.css";
-import "@/components/card/styles/CardTitle.css";
-import "@/components/card/styles/CardDescription.css";
-import "@/components/card/styles/CardImage.css";
-import "@/components/card/styles/CardOverlay.css";
-import "@/components/card/styles/CardLink.css";
+import "@/components/ui/card/styles/Card.css";
+import "@/components/ui/card/styles/CardBody.css";
+import "@/components/ui/card/styles/CardTitle.css";
+import "@/components/ui/card/styles/CardDescription.css";
+import "@/components/ui/card/styles/CardImage.css";
+import "@/components/ui/card/styles/CardOverlay.css";
+import "@/components/ui/card/styles/CardLink.css";
 
 function Card({ variant = "", children, ...props }) {
   return (

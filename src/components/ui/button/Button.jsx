@@ -1,5 +1,5 @@
 import { cn } from "@/utils/cn.js";
-import "@/components/button/Button.css";
+import "@/components/ui/button/Button.css";
 
 function Button({ variant = "", children, ...props }) {
   return (

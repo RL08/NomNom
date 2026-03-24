@@ -1,12 +1,12 @@
 import "@features/meal/style/MealCard.css";
 import { Link } from "react-router-dom";
-import Span from "@/components/span/Span.jsx";
+import Span from "@/components/ui/span/Span.jsx";
 import {
   Card,
   CardBody,
   CardImage,
   CardTitle,
-} from "@/components/card/Card.jsx";
+} from "@/components/ui/card/Card.jsx";
 
 function MealCard({ meal }) {
   return (

@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getMealsByCategory } from "@/services/mealService.js";
 import "@/pages/category/CategoryPage.css"
-import Section from "@/components/section/Section.jsx";
+import Section from "@/components/ui/section/Section.jsx";
 import MealCard from "@/features/meal/components/MealCard.jsx";
 
 function CategoryPage() {

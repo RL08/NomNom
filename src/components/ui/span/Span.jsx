@@ -1,5 +1,5 @@
 import { cn } from "@/utils/cn.js";
-import "@/components/span/Span.css";
+import "@/components/ui/span/Span.css";
 
 function Span({ variant = "", children, ...props }) {
   return (
