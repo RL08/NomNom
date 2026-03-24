@@ -32,7 +32,7 @@ function HomePage() {
         <RandomMealCard></RandomMealCard>
       </Section>
       <Section>
-        <H1>Categories</H1>
+        <H1 variant="fancy">Categories</H1>
 
         {error && <div className="error-message">{error}</div>}
         {loading && <div>Loading...</div>}

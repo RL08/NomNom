@@ -34,7 +34,7 @@ function CategoryPage() {
       <Section>
         <BackButton />
         <div className="categorypage-title-container">
-          <H1>{name}</H1>
+          <H1 variant="fancy">{name}</H1>
           {!loading && (
             <P>
               {meals.length} {meals.length === 1 ? "recipe" : "recipes"} found

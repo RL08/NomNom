@@ -39,7 +39,7 @@ function RandomMealCard() {
   return (
     <>
       <div className="randommealcard-header">
-        <H1>Today's Pick</H1>
+        <H1 variant="fancy">Today's Pick</H1>
         <Button onClick={refreshMeal}>
           <FontAwesomeIcon icon="repeat" />
           Shuffle
