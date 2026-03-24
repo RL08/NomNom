@@ -47,10 +47,8 @@ function RandomMealCard() {
       </div>
 
       {error && <div className="error-message">{error}</div>}
-
-      {loading ? (
-        <div>Loading...</div>
-      ) : (
+      {loading && <div>Loading...</div>}
+      {randomMeal && (
         <Card variant="lg">
           <div className="randommealcard-card-img-container">
             <CardImage src={randomMeal.strMealThumb} alt={randomMeal.strMeal} />
