@@ -5,10 +5,6 @@
   flex-wrap: wrap;
   gap: 12px;
 }
-.randommealcard-card-img-container {
-  position: absolute;
-  inset: 0;
-}
 .randommealcard-card-tag-container {
   display: flex;
   gap: 8px;

@@ -50,10 +50,8 @@ function RandomMealCard() {
       {loading && <div>Loading...</div>}
       {randomMeal && (
         <Card variant="lg">
-          <div className="randommealcard-card-img-container">
-            <CardImage src={randomMeal.strMealThumb} alt={randomMeal.strMeal} />
-            <CardOverlay variant="darker" />
-          </div>
+          <CardImage src={randomMeal.strMealThumb} alt={randomMeal.strMeal} />
+          <CardOverlay variant="darker" />
           <CardBody variant="lg">
             <div className="randommealcard-card-tag-container">
               {randomMeal.strCategory && (

@@ -1,6 +1,5 @@
 import "@features/meal/style/MealCard.css";
 import { Link } from "react-router-dom";
-import Span from "@/components/ui/span/Span.jsx";
 import {
   Card,
   CardBody,
@@ -11,10 +10,8 @@ import {
 function MealCard({ meal }) {
   return (
     <Link to={`/meal/${meal.idMeal}`}>
-      <Card variant="animated">
-        <div className="meal-card-img-wrapper">
-          <CardImage src={meal.strMealThumb} alt={meal.strMeal} />
-        </div>
+      <Card variant="md animated">
+        <CardImage src={meal.strMealThumb} alt={meal.strMeal} />
         <CardBody>
           <CardTitle variant="wrap">{meal.strMeal}</CardTitle>
         </CardBody>

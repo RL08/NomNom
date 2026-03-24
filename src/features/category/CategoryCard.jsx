@@ -11,7 +11,7 @@ import {
 function CategoryCard({ category }) {
   return (
     <Link to={`/category/${category.strCategory}`}>
-      <Card variant="animated">
+      <Card variant="sm animated">
         <div className="categorycard-card-img-container">
           <CardImage
             src={category.strCategoryThumb}
