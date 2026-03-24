@@ -11,7 +11,7 @@
 .cardtitle-dark {
   color: white;
 }
-.cardtitle-insidebig {
+.cardtitle-lg {
   font-size: clamp(1.5rem, 3.5vw, 2.4rem);
   line-height: 1.2;
   max-width: 640px;

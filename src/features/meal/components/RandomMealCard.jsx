@@ -50,22 +50,22 @@ function RandomMealCard() {
       {loading ? (
         <div>Loading...</div>
       ) : (
-        <Card variant="big">
+        <Card variant="lg">
           <div className="randommealcard-card-img-container">
             <CardImage src={randomMeal.strMealThumb} alt={randomMeal.strMeal} />
             <CardOverlay variant="darker" />
           </div>
-          <CardBody variant="insidebig">
+          <CardBody variant="lg">
             <div className="randommealcard-card-tag-container">
               {randomMeal.strCategory && (
-                <Span variant="dark tag insidebig">{randomMeal.strCategory}</Span>
+                <Span variant="dark tag lg">{randomMeal.strCategory}</Span>
               )}
               {randomMeal.strArea && (
-                <Span variant="dark tag insidebig">{randomMeal.strArea}</Span>
+                <Span variant="dark tag lg">{randomMeal.strArea}</Span>
               )}
             </div>
-            <CardTitle variant="dark insidebig">{randomMeal.strMeal}</CardTitle>
-            <CardDescription variant="dark insidebig">
+            <CardTitle variant="dark lg">{randomMeal.strMeal}</CardTitle>
+            <CardDescription variant="dark lg">
               {randomMeal.strInstructions?.slice(0, 160)}...
             </CardDescription>
             <div className="randommealcard-card-link-container">

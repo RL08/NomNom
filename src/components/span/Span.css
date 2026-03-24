@@ -18,7 +18,7 @@
   border-radius: var(--border-radius-lg);
   backdrop-filter: blur(4px);
 }
-.span-insidebig {
+.span-lg {
   font-size: 0.75rem;
   letter-spacing: 0.04em;
 }
