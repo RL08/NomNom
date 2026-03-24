@@ -1,9 +1,12 @@
 import { useCallback, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getMealsByCategory } from "@/services/mealService.js";
-import "@/pages/category/CategoryPage.css"
+import "@/pages/category/CategoryPage.css";
 import Section from "@/components/ui/section/Section.jsx";
 import MealCard from "@/features/meal/components/MealCard.jsx";
+import BackButton from "@/components/BackButton.jsx";
+import { H1 } from "@/components/ui/heading/Heading.jsx";
+import P from "@/components/ui/p/P.jsx";
 
 function CategoryPage() {
   const { name } = useParams();
@@ -28,6 +31,17 @@ function CategoryPage() {
 
   return (
     <>
+      <Section>
+        <BackButton />
+        <div className="categorypage-title-container">
+          <H1>{name}</H1>
+          {!loading && (
+            <P>
+              {meals.length} {meals.length === 1 ? "recipe" : "recipes"} found
+            </P>
+          )}
+        </div>
+      </Section>
       <Section>
         {error && <div className="error-message">{error}</div>}
 
