@@ -22,7 +22,11 @@
   font-size: 0.60rem;
   letter-spacing: 0.04em;
 }
+.span-md {
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+}
 .span-lg {
-  font-size: 0.75rem;
+  font-size: 1.2rem;
   letter-spacing: 0.04em;
 }
