@@ -58,15 +58,17 @@ function MealPage() {
                 )}
               </div>
               <CardTitle variant="dark lg">{meal.strMeal}</CardTitle>
-              <Button
-                variant="lg dark primary"
-                href={meal.strYoutube}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Watch Video
-                <FontAwesomeIcon icon="caret-right" />
-              </Button>
+              <div className="mealpage-card-link-container">
+                <Button
+                  variant="dark primary"
+                  href={meal.strYoutube}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Watch Video
+                  <FontAwesomeIcon icon="caret-right" />
+                </Button>
+              </div>
             </CardBody>
           </Card>
         )}
