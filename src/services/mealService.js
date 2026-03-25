@@ -38,3 +38,9 @@ export const getIngredientsFromMeal = (meal) => {
   }
   return ingredients;
 };
+
+export const searchMeals = async (query) => {
+  const response = await fetch(`${BASE_URL}/search.php?s=${query}`);
+  const data = await response.json();
+  return data.meals || [];
+};

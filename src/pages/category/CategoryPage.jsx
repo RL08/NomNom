@@ -19,7 +19,7 @@ function CategoryPage() {
       const meals = await getMealsByCategory(name);
       setMeals(meals);
     } catch {
-      setError("Failed to load categories...");
+      setError("Failed to load meals...");
     } finally {
       setLoading(false);
     }
