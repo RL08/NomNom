@@ -66,12 +66,10 @@ function RandomMealCard() {
               {randomMeal.strInstructions?.slice(0, 160)}...
             </CardDescription>
             <div className="randommealcard-card-link-container">
-              <CardLink
-                variant="dark button amber"
-                to={`/meal/${randomMeal.idMeal}`}
-              >
-                View Recipe →
-              </CardLink>
+              <Button variant="primary dark" to={`/meal/${randomMeal.idMeal}`}>
+                View Recipe
+                <FontAwesomeIcon icon="caret-right" />
+              </Button>
             </div>
           </CardBody>
         </Card>
