@@ -25,8 +25,8 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-full-bleed-container">
         <Link to="/" className="navbar-logo-container">
-          <Span variant="logo">Nom</Span>
-          <Span variant="logo">Nom</Span>
+          <Span variant="logo nostyle">Nom</Span>
+          <Span variant="logo nostyle">Nom</Span>
         </Link>
         <Form variant="navbar" onSubmit={handleSearch}>
           <div className="navbar-search-container">
