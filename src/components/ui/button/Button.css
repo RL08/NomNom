@@ -28,3 +28,6 @@
 .button-nostyle:hover {
   transform: translateY(0);
 }
+.button-dark {
+  color: white;
+}
