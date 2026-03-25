@@ -9,7 +9,6 @@ import {
   CardBody,
   CardDescription,
   CardImage,
-  CardLink,
   CardOverlay,
   CardTitle,
 } from "@/components/ui/card/Card.jsx";
