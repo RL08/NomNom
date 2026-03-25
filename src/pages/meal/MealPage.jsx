@@ -3,9 +3,19 @@ import { useCallback, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getMealById } from "@/services/mealService.js";
 import Section from "@/components/ui/section/Section.jsx";
-import { Card, CardImage, CardOverlay } from "@/components/ui/card/Card.jsx";
+import {
+  Card,
+  CardBody,
+  CardImage,
+  CardOverlay,
+  CardTitle,
+} from "@/components/ui/card/Card.jsx";
 import MealIngredientAside from "@/features/meal/components/MealIngredientAside.jsx";
 import MealInstructionSection from "@/features/meal/components/MealInstructionSection.jsx";
+import Span from "@/components/ui/span/Span.jsx";
+import BackButton from "@/components/BackButton.jsx";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Button from "@/components/ui/button/Button.jsx";
 
 function MealPage() {
   const { id } = useParams();
@@ -37,6 +47,27 @@ function MealPage() {
           <Card variant="lg">
             <CardImage src={meal.strMealThumb} alt={meal.strMeal} />
             <CardOverlay />
+            <CardBody variant="lg">
+              <BackButton variant="dark" />
+              <div className="mealpage-card-tag-container">
+                {meal.strCategory && (
+                  <Span variant="dark tag md">{meal.strCategory}</Span>
+                )}
+                {meal.strArea && (
+                  <Span variant="dark tag md">{meal.strArea}</Span>
+                )}
+              </div>
+              <CardTitle variant="dark lg">{meal.strMeal}</CardTitle>
+              <Button
+                variant="lg dark primary"
+                href={meal.strYoutube}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Watch Video
+                <FontAwesomeIcon icon="caret-right" />
+              </Button>
+            </CardBody>
           </Card>
         )}
       </Section>
