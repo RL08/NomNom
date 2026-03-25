@@ -1,12 +1,10 @@
 import { cn } from "@/utils/cn.js";
-import { Link } from "react-router-dom";
 import "@/components/ui/card/styles/Card.css";
 import "@/components/ui/card/styles/CardBody.css";
 import "@/components/ui/card/styles/CardTitle.css";
 import "@/components/ui/card/styles/CardDescription.css";
 import "@/components/ui/card/styles/CardImage.css";
 import "@/components/ui/card/styles/CardOverlay.css";
-import "@/components/ui/card/styles/CardLink.css";
 
 function Card({ variant = "", children, ...props }) {
   return (
@@ -48,14 +46,6 @@ function CardOverlay({ variant = "", ...props }) {
   return <div className={cn("cardoverlay", variant)} {...props} />;
 }
 
-function CardLink({ variant = "", to, children }) {
-  return (
-    <Link className={cn("cardlink", variant)} to={to}>
-      {children}
-    </Link>
-  );
-}
-
 export {
   Card,
   CardBody,
@@ -63,5 +53,4 @@ export {
   CardTitle,
   CardDescription,
   CardOverlay,
-  CardLink,
 };
