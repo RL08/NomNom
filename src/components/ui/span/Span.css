@@ -1,11 +1,21 @@
 .span {
   letter-spacing: 0.04em;
+  background: rgba(255, 255, 255, 0.914);
 }
 .span-logo:first-child {
   color: var(--ink);
 }
 .span-logo:last-child {
   color: var(--amber);
+}
+.span-nostyle {
+  background: 0;
+  border: 0;
+  padding: 0;
+}
+.span-amber {
+  background: var(--amber);
+  color: white;
 }
 .span-dark {
   background: rgba(255, 255, 255, 0.18);
