@@ -6,7 +6,7 @@ function BackButton({ variant = "" }) {
   const navigate = useNavigate();
 
   return (
-    <Button variant={`nostyle ${variant}`} onClick={() => navigate(-1)}>
+    <Button variant={`nostyle sm ${variant}`} onClick={() => navigate(-1)}>
       <FontAwesomeIcon icon="arrow-left" />
       Back
     </Button>
