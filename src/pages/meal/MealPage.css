@@ -1,0 +1,11 @@
+.mealpage-meal-info-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.mealpage-card-tag-container {
+  display: flex;
+  gap: 8px;
+}
+.mealpage-action-container a > * {
+  padding: 10px;
+}

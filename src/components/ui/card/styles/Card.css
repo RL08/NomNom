@@ -1,0 +1,30 @@
+.card {
+  position: relative;
+  overflow: hidden;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  transition:
+    transform 0.25s,
+    box-shadow 0.25s;
+}
+.card-sm {
+  border-radius: var(--border-radius-sm);
+  height: 200px;
+  box-shadow: var(--box-shadow-sm);
+}
+.card-md {
+  border-radius: var(--border-radius-md);
+  height: 360px;
+  box-shadow: var(--box-shadow-md);
+}
+.card-lg {
+  border-radius: var(--border-radius-lg);
+  height: 480px;
+  box-shadow: var(--box-shadow-lg);
+}
+.card-animated:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: var(--box-shadow-md);
+  cursor: pointer;
+}

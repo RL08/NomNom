@@ -1,0 +1,14 @@
+.p {
+  font-size: 0.9rem;
+  color: var(--ink-faint);
+  margin-top: 4px;
+}
+.p-dark {
+  color: var(--ink);
+}
+.p-lg {
+  font-size: 1.2rem;
+}
+.p-mb {
+  margin-bottom: 10px;
+}

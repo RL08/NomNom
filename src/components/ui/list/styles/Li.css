@@ -1,0 +1,14 @@
+.li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.li-ordered {
+  padding-bottom: 24px;
+}
+.li-dark {
+  border-bottom: 1px solid var(--cream-dark);
+}
+.li-dark:last-child {
+  border-bottom: none;
+}

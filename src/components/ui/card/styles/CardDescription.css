@@ -1,0 +1,10 @@
+.carddescription {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+.carddescription-dark {
+  color: rgba(255, 255, 255, 0.75);
+}
+.carddescription-lg {
+  max-width: 540px;
+}

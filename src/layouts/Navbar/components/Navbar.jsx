@@ -1,8 +1,12 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
-import NavLink from "@/layouts/navbar/components/NavLink.jsx";
 import "@/layouts/navbar/styles/Navbar.css";
+import NavLink from "@/layouts/navbar/components/NavLink.jsx";
+import Button from "@/components/ui/button/Button.jsx";
+import Input from "@/components/ui/input/Input.jsx";
+import Form from "@/components/ui/form/Form.jsx";
+import Span from "@/components/ui/span/Span.jsx";
 
 function Navbar() {
   const [searchInput, setSearchInput] = useState("");
@@ -18,26 +22,29 @@ function Navbar() {
   };
 
   return (
-    <nav>
-      <div className="full-bleed-container">
-        <Link to="/" className="logo-container">
-          <span className="logo">Nom</span>
-          <span className="logo">Nom</span>
+    <nav className="navbar">
+      <div className="navbar-full-bleed-container">
+        <Link to="/" className="navbar-logo-container">
+          <Span variant="logo nostyle">Nom</Span>
+          <Span variant="logo nostyle">Nom</Span>
         </Link>
-        <form onSubmit={handleSearch}>
-          <div className="search-container">
-            <button type="submit">
-              <FontAwesomeIcon icon="magnifying-glass" className="icon" />
-            </button>
-            <input
+        <Form variant="navbar" onSubmit={handleSearch}>
+          <div className="navbar-search-container">
+            <Button variant="nostyle" type="submit">
+              <FontAwesomeIcon
+                icon="magnifying-glass"
+                className="navbar-icon"
+              />
+            </Button>
+            <Input
               type="text"
               placeholder="Search any meal..."
               value={searchInput}
               onChange={(e) => setSearchInput(e.target.value)}
             />
           </div>
-        </form>
-        <div className="links">
+        </Form>
+        <div className="navbar-link-container">
           <NavLink to="/">Browse</NavLink>
           <NavLink to="/favorite">Favorite</NavLink>
         </div>
