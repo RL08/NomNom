@@ -4,3 +4,9 @@
   gap: 20px;
   align-items: stretch;
 }
+@media (max-width: 600px) {
+  .favoritepage-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 12px;
+  }
+}

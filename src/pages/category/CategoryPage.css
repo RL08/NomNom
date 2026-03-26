@@ -1,6 +1,13 @@
 .meals-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   gap: 20px;
   align-items: stretch;
+}
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+  .meals-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 12px;
+  }
 }
