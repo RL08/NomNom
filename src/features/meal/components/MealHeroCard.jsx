@@ -1,6 +1,5 @@
 import "@features/meal/styles/MealHeroCard.css"
 import Span from "@/components/ui/span/Span.jsx";
-import BackButton from "@/components/BackButton.jsx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Button from "@/components/ui/button/Button.jsx";
 import FavoriteButton from "@/components/FavoriteButton.jsx";
@@ -19,7 +18,6 @@ function MealHeroCard({ meal }) {
         <CardImage src={meal.strMealThumb} alt={meal.strMeal} />
         <CardOverlay />
         <CardBody variant="lg absolute">
-          <BackButton variant="dark" />
           <div className="mealherocard-card-tag-container">
             {meal.strCategory && (
               <Span variant="dark tag md">{meal.strCategory}</Span>
