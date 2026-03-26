@@ -1,7 +1,7 @@
+import "@features/meal/styles/RandomMealCard.css";
 import { useCallback, useEffect, useState } from "react";
 import { getRandomMeal } from "@/services/mealService.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "@features/meal/style/RandomMealCard.css";
 import Button from "@/components/ui/button/Button.jsx";
 import {
   Card,

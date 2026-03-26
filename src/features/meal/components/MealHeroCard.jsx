@@ -1,4 +1,4 @@
-import "@features/meal/style/MealHeroCard.css"
+import "@features/meal/styles/MealHeroCard.css"
 import Span from "@/components/ui/span/Span.jsx";
 import BackButton from "@/components/BackButton.jsx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

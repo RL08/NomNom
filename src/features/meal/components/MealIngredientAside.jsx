@@ -1,4 +1,4 @@
-import "@features/meal/style/MealIngredientAside.css";
+import "@features/meal/styles/MealIngredientAside.css";
 import { getIngredientsFromMeal } from "@/services/mealService.js";
 import Section from "@/components/ui/section/Section.jsx";
 import { H2 } from "@/components/ui/heading/Heading.jsx";

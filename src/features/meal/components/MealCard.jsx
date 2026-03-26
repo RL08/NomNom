@@ -1,4 +1,4 @@
-import "@features/meal/style/MealCard.css";
+import "@features/meal/styles/MealCard.css";
 import { Link } from "react-router-dom";
 import {
   Card,

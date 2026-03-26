@@ -1,4 +1,4 @@
-import "@/features/meal/style/MealInstructionSection.css";
+import "@/features/meal/styles/MealInstructionSection.css";
 import { H2 } from "@/components/ui/heading/Heading.jsx";
 import Section from "@/components/ui/section/Section.jsx";
 import P from "@/components/ui/p/P.jsx";
