@@ -48,13 +48,17 @@ function Navbar() {
         <Button
           variant="nostyle"
           className="navbar-burger"
-          onClick={() => setIsOpen((prev) => !prev)}
+          onClick={() => setIsOpen(true)}
         >
           <FontAwesomeIcon icon="bars" />
         </Button>
         <div className={`navbar-link-container ${isOpen ? "open" : ""}`}>
-          <NavLink to="/">Browse</NavLink>
-          <NavLink to="/favorite">Favorite</NavLink>
+          <NavLink to="/" onClick={() => setIsOpen(false)}>
+            Browse
+          </NavLink>
+          <NavLink to="/favorite" onClick={() => setIsOpen(false)}>
+            Favorite
+          </NavLink>
         </div>
       </div>
     </nav>
