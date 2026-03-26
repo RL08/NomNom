@@ -6,7 +6,7 @@ import {
   CardImage,
   CardTitle,
 } from "@/components/ui/card/Card.jsx";
-import FavoriteButton from "@/components/FavoriteButton.jsx";
+import FavoriteIcon from "@/components/FavoriteIcon.jsx";
 
 function MealCard({ meal }) {
   return (
@@ -14,7 +14,7 @@ function MealCard({ meal }) {
       <Card variant="md">
         <div className="mealcard-img-container">
           <CardImage src={meal.strMealThumb} alt={meal.strMeal} />
-          <FavoriteButton meal={meal} />
+          <FavoriteIcon meal={meal} />
         </div>
         <CardBody>
           <CardTitle variant="wrap">{meal.strMeal}</CardTitle>
