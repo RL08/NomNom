@@ -6,7 +6,7 @@
   padding: 9px 18px;
   border-radius: var(--border-radius-lg);
   border: 1.5px solid var(--border);
-  background: none;
+  background: white;
   cursor: pointer;
   font-family: var(--font-family-default);
   font-size: 0.875rem;
@@ -24,14 +24,14 @@
 .button-primary {
   background-color: var(--amber);
 }
-.button-primary:hover {
-  background-color: rgba(255, 255, 255, 0.715);
-}
 .button-sm {
   width: 80px;
 }
 .button-lg {
   width: 220px;
+}
+.button-icon {
+  padding: 9px;
 }
 .button-nostyle {
   border: 0;
@@ -46,4 +46,9 @@
 }
 .button-dark:hover {
   color: white;
+}
+.button-absolutetopright {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
