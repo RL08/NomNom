@@ -2,10 +2,11 @@ import { NavLink as DefaultNavLink } from "react-router-dom";
 import "@/layouts/navbar/styles/NavLink.css";
 import { cn } from "@/utils/cn.js";
 
-function NavLink({ variant = "", to, children }) {
+function NavLink({ variant = "", to, children, ...props }) {
   return (
     <DefaultNavLink
       to={to}
+      {...props}
       className={({ isActive }) =>
         `${cn("navlink", variant)} ${isActive ? "active" : ""}`
       }

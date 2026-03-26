@@ -51,3 +51,32 @@
   gap: 4px;
   flex-shrink: 0;
 }
+.navbar-burger {
+  display: none;
+  border: none;
+  background-color: transparent;
+}
+@media (max-width: 600px) {
+  .navbar-burger {
+    display: block;
+  }
+  /* Hide links by default */
+  .navbar-link-container {
+    position: absolute;
+    top: 68px;
+    left: 0;
+    width: 100%;
+    background: var(--cream);
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 24px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: all 0.25s ease;
+  }
+  .navbar-link-container.open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}

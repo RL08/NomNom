@@ -43,3 +43,27 @@
 .span-bold {
   font-weight: 600;
 }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .span-sm {
+    font-size: 0.8rem;
+  }
+  .span-md {
+    font-size: 1rem;
+  }
+  .span-lg {
+    font-size: 1.4rem;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .span-sm {
+    font-size: 0.8rem;
+  }
+  .span-md {
+    font-size: 1rem;
+  }
+  .span-lg {
+    font-size: 1.4rem;
+  }
+}

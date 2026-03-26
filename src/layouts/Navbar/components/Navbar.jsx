@@ -10,6 +10,7 @@ import Span from "@/components/ui/span/Span.jsx";
 
 function Navbar() {
   const [searchInput, setSearchInput] = useState("");
+  const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
 
   const handleSearch = (e) => {
@@ -44,9 +45,20 @@ function Navbar() {
             />
           </div>
         </Form>
-        <div className="navbar-link-container">
-          <NavLink to="/">Browse</NavLink>
-          <NavLink to="/favorite">Favorite</NavLink>
+        <Button
+          variant="nostyle"
+          className="navbar-burger"
+          onClick={() => setIsOpen(true)}
+        >
+          <FontAwesomeIcon icon="bars" />
+        </Button>
+        <div className={`navbar-link-container ${isOpen ? "open" : ""}`}>
+          <NavLink to="/" onClick={() => setIsOpen(false)}>
+            Browse
+          </NavLink>
+          <NavLink to="/favorite" onClick={() => setIsOpen(false)}>
+            Favorite
+          </NavLink>
         </div>
       </div>
     </nav>
