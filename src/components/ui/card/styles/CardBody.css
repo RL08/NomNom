@@ -2,8 +2,8 @@
   padding: 14px 16px;
   display: flex;
   flex-direction: column;
-  flex: 1;
   gap: 12px;
+  flex-shrink: 0;
 }
 .cardbody-lg {
   position: absolute;
