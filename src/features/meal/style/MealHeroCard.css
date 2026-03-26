@@ -1,0 +1,8 @@
+.mealherocard-card-link-container,
+.mealherocard-card-tag-container {
+  display: flex;
+  gap: 8px;
+}
+.mealherocard-action-container a > * {
+  padding: 10px;
+}

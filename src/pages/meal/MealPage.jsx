@@ -3,20 +3,9 @@ import { useCallback, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getMealById } from "@/services/mealService.js";
 import Section from "@/components/ui/section/Section.jsx";
-import {
-  Card,
-  CardBody,
-  CardImage,
-  CardOverlay,
-  CardTitle,
-} from "@/components/ui/card/Card.jsx";
 import MealIngredientAside from "@/features/meal/components/MealIngredientAside.jsx";
 import MealInstructionSection from "@/features/meal/components/MealInstructionSection.jsx";
-import Span from "@/components/ui/span/Span.jsx";
-import BackButton from "@/components/BackButton.jsx";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Button from "@/components/ui/button/Button.jsx";
-import FavoriteButton from "@/components/FavoriteButton.jsx";
+import MealHeroCard from "@/features/meal/components/MealHeroCard.jsx";
 
 function MealPage() {
   const { id } = useParams();
@@ -44,36 +33,7 @@ function MealPage() {
       <Section>
         {loading && <div>Loading...</div>}
         {error && <div className="error-message">{error}</div>}
-        {meal && (
-          <Card variant="lg">
-            <CardImage src={meal.strMealThumb} alt={meal.strMeal} />
-            <CardOverlay />
-            <CardBody variant="lg absolute">
-              <BackButton variant="dark" />
-              <div className="mealpage-card-tag-container">
-                {meal.strCategory && (
-                  <Span variant="dark tag md">{meal.strCategory}</Span>
-                )}
-                {meal.strArea && (
-                  <Span variant="dark tag md">{meal.strArea}</Span>
-                )}
-              </div>
-              <CardTitle variant="dark lg">{meal.strMeal}</CardTitle>
-              <div className="mealpage-card-link-container">
-                <Button
-                  variant="dark primary"
-                  href={meal.strYoutube}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Watch Video
-                  <FontAwesomeIcon icon="caret-right" />
-                </Button>
-                <FavoriteButton meal={meal}/>
-              </div>
-            </CardBody>
-          </Card>
-        )}
+        {meal && <MealHeroCard meal={meal} />}
       </Section>
       <div className="mealpage-meal-info-container">
         {meal && <MealIngredientAside meal={meal} />}
