@@ -1,10 +1,11 @@
 import "@/layouts/footer/Footer.css"
+import P from "@/components/ui/p/P.jsx";
 
 function Footer() {
   return (
     <>
       <footer className="footer">
-        <p>
+        <P>
           NomNom &mdash; Powered by{" "}
           <a
             href="https://www.themealdb.com"
@@ -13,7 +14,7 @@ function Footer() {
           >
             TheMealDB
           </a>
-        </p>
+        </P>
       </footer>
     </>
   );
