@@ -1,4 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useFavorites } from "@/hooks/useFavorite.js";
 import Button from "@/components/ui/button/Button.jsx";
 
@@ -13,16 +12,7 @@ function FavoriteButton({ meal }) {
   };
 
   return (
-    <Button
-      variant="icon absolutetopright"
-      onClick={handleClick}
-      title={favorited ? "Remove from favorites" : "Add to favorites"}
-    >
-      <FontAwesomeIcon
-        icon={favorited ? ["fas", "heart"] : ["far", "heart"]}
-        style={{ color: "rgb(230, 102, 99)" }}
-      />
-    </Button>
+    <Button onClick={handleClick}>{favorited ? "✦ Saved" : "Save"}</Button>
   );
 }
 

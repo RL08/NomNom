@@ -16,6 +16,7 @@ import Span from "@/components/ui/span/Span.jsx";
 import BackButton from "@/components/BackButton.jsx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Button from "@/components/ui/button/Button.jsx";
+import FavoriteButton from "@/components/FavoriteButton.jsx";
 
 function MealPage() {
   const { id } = useParams();
@@ -68,6 +69,7 @@ function MealPage() {
                   Watch Video
                   <FontAwesomeIcon icon="caret-right" />
                 </Button>
+                <FavoriteButton meal={meal}/>
               </div>
             </CardBody>
           </Card>
