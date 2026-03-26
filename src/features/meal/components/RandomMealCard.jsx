@@ -1,8 +1,7 @@
+import "@features/meal/styles/RandomMealCard.css";
 import { useCallback, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import { getRandomMeal } from "@/services/mealService.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "@features/meal/style/RandomMealCard.css";
 import Button from "@/components/ui/button/Button.jsx";
 import {
   Card,
@@ -14,6 +13,7 @@ import {
 } from "@/components/ui/card/Card.jsx";
 import Span from "@/components/ui/span/Span.jsx";
 import { H1 } from "@/components/ui/heading/Heading.jsx";
+import FavoriteButton from "@/components/FavoriteButton.jsx";
 
 function RandomMealCard() {
   const [randomMeal, setRandomMeal] = useState(null);
@@ -51,7 +51,7 @@ function RandomMealCard() {
         <Card variant="lg">
           <CardImage src={randomMeal.strMealThumb} alt={randomMeal.strMeal} />
           <CardOverlay variant="darker" />
-          <CardBody variant="lg">
+          <CardBody variant="lg absolute">
             <div className="randommealcard-card-tag-container">
               {randomMeal.strCategory && (
                 <Span variant="dark tag sm">{randomMeal.strCategory}</Span>
@@ -69,6 +69,7 @@ function RandomMealCard() {
                 View Recipe
                 <FontAwesomeIcon icon="caret-right" />
               </Button>
+              <FavoriteButton meal={randomMeal} />
             </div>
           </CardBody>
         </Card>

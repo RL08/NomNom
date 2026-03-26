@@ -1,3 +1,4 @@
+/* Base */
 .button {
   display: inline-flex;
   align-items: center;
@@ -6,7 +7,7 @@
   padding: 9px 18px;
   border-radius: var(--border-radius-lg);
   border: 1.5px solid var(--border);
-  background: none;
+  background: white;
   cursor: pointer;
   font-family: var(--font-family-default);
   font-size: 0.875rem;
@@ -21,17 +22,19 @@
   color: var(--ink-soft);
   transform: translateY(-1px);
 }
-.button-primary {
-  background-color: var(--amber);
-}
-.button-primary:hover {
-  background-color: rgba(255, 255, 255, 0.715);
-}
+/* Sizes */
 .button-sm {
   width: 80px;
 }
 .button-lg {
   width: 220px;
+}
+.button-icon {
+  padding: 9px;
+}
+/* Variants */
+.button-primary {
+  background-color: var(--amber);
 }
 .button-nostyle {
   border: 0;
@@ -46,4 +49,10 @@
 }
 .button-dark:hover {
   color: white;
+}
+/* Positioning */
+.button-absolutetopright {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }

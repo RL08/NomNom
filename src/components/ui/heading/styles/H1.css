@@ -1,8 +1,10 @@
+/* Base */
 .h1 {
   font-family: var(--font-family-default);
   font-size: 2.5rem;
   font-weight: 700;
 }
+/* Variants */
 .h1-fancy {
   font-family: var(--font-family-fancy);
 }
