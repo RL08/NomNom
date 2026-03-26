@@ -47,7 +47,7 @@ function MealPage() {
           <Card variant="lg">
             <CardImage src={meal.strMealThumb} alt={meal.strMeal} />
             <CardOverlay />
-            <CardBody variant="lg">
+            <CardBody variant="lg absolute">
               <BackButton variant="dark" />
               <div className="mealpage-card-tag-container">
                 {meal.strCategory && (

@@ -51,7 +51,7 @@ function RandomMealCard() {
         <Card variant="lg">
           <CardImage src={randomMeal.strMealThumb} alt={randomMeal.strMeal} />
           <CardOverlay variant="darker" />
-          <CardBody variant="lg">
+          <CardBody variant="lg absolute">
             <div className="randommealcard-card-tag-container">
               {randomMeal.strCategory && (
                 <Span variant="dark tag sm">{randomMeal.strCategory}</Span>

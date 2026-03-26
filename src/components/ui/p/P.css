@@ -1,14 +1,17 @@
+/* Base */
 .p {
   font-size: 0.9rem;
   color: var(--ink-faint);
   margin-top: 4px;
 }
+/* Variant */
 .p-dark {
   color: var(--ink);
 }
 .p-lg {
   font-size: 1.2rem;
 }
+/* Positioning */
 .p-mb {
   margin-bottom: 10px;
 }

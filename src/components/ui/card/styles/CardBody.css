@@ -1,3 +1,4 @@
+/* Base */
 .cardbody {
   padding: 14px 16px;
   display: flex;
@@ -5,10 +6,14 @@
   gap: 12px;
   flex-shrink: 0;
 }
+/* Sizes */
 .cardbody-lg {
+  padding: 32px 36px;
+}
+/* Positioning */
+.cardbody-absolute {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 32px 36px;
 }

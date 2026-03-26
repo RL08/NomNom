@@ -1,3 +1,4 @@
+/* Base */
 .card {
   position: relative;
   overflow: hidden;
@@ -8,6 +9,7 @@
     transform 0.25s,
     box-shadow 0.25s;
 }
+/* Sizes */
 .card-sm {
   border-radius: var(--border-radius-sm);
   height: 200px;
@@ -23,6 +25,7 @@
   height: 480px;
   box-shadow: var(--box-shadow-lg);
 }
+/* Variants */
 .card-animated:hover {
   transform: translateY(-5px) scale(1.05);
   box-shadow: var(--box-shadow-md);

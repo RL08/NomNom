@@ -1,3 +1,4 @@
+/* Base */
 .cardoverlay {
   position: absolute;
   inset: 0;
@@ -7,6 +8,7 @@
     transparent 60%
   );
 }
+/* Variants */
 .cardoverlay-darker {
   background: linear-gradient(
     to top,
